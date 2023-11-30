@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/ecosolution/static/css/main.e6c13ad2.css",
-    "main.js": "/ecosolution/static/js/main.7f1203fc.js",
-    "static/js/787.53ce29a4.chunk.js": "/ecosolution/static/js/787.53ce29a4.chunk.js",
+    "main.css": "/ecosolution/static/css/main.59094a38.css",
+    "main.js": "/ecosolution/static/js/main.23110d83.js",
+    "static/media/FiraSans-Regular.ttf": "/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
+    "static/media/FiraSans-Light.ttf": "/ecosolution/static/media/FiraSans-Light.7ece67e11e181a7292ef.ttf",
+    "static/media/Oswald-Bold.ttf": "/ecosolution/static/media/Oswald-Bold.41669c1e4f6bdc605d26.ttf",
+    "static/media/Oswald-Regular.ttf": "/ecosolution/static/media/Oswald-Regular.31bce04a1ae8549b1464.ttf",
+    "static/media/CASaygonTextTrial-Regular.otf": "/ecosolution/static/media/CASaygonTextTrial-Regular.12d3d0730242064beb6c.otf",
+    "static/media/Fontspring-DEMO-allroundgothic-thick.otf": "/ecosolution/static/media/Fontspring-DEMO-allroundgothic-thick.a3cc674d03213c20323d.otf",
     "index.html": "/ecosolution/index.html",
-    "main.e6c13ad2.css.map": "/ecosolution/static/css/main.e6c13ad2.css.map",
-    "main.7f1203fc.js.map": "/ecosolution/static/js/main.7f1203fc.js.map",
-    "787.53ce29a4.chunk.js.map": "/ecosolution/static/js/787.53ce29a4.chunk.js.map"
+    "main.59094a38.css.map": "/ecosolution/static/css/main.59094a38.css.map",
+    "main.23110d83.js.map": "/ecosolution/static/js/main.23110d83.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.7f1203fc.js"
+    "static/css/main.59094a38.css",
+    "static/js/main.23110d83.js"
   ]
 }
