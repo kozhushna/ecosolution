@@ -25,8 +25,6 @@ export const theme = Object.freeze({
 
   sizes: sizes,
 
-  useWebp: document.querySelector('html').classList.contains('webp'),
-
   devices: {
     onlymobile: `max-width: ${sizes.onlymobile}px`,
     mobile: `min-width: ${sizes.mobile}px`,
