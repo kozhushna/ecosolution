@@ -33,11 +33,13 @@ export const Title = styled(SectionTitle)`
 `;
 
 export const Text = styled.p`
+  margin-bottom: 36px;
   text-align: justify;
   letter-spacing: -0.64px;
 
   @media screen and (${props => props.theme.devices.tablet}) {
     max-width: 342px;
+    margin-bottom: 0;
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
@@ -49,5 +51,36 @@ export const ContentWrapper = styled.div`
   @media screen and (${props => props.theme.devices.tablet}) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (${props => props.theme.devices.desktop}) {
+    margin-bottom: 122px;
+  }
+`;
+
+export const ListWrapper = styled.div`
+  position: relative;
+`;
+
+export const ImageRight = styled.img`
+  display: none;
+
+  @media screen and (${props => props.theme.devices.tablet}) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+`;
+
+export const ImageLeft = styled.img`
+  display: none;
+
+  @media screen and (${props => props.theme.devices.tablet}) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
   }
 `;

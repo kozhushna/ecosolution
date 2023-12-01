@@ -1,5 +1,12 @@
 import { Container, Section } from 'App.styled';
-import { ContentWrapper, Text, Title } from './Values.styled';
+import {
+  ContentWrapper,
+  ImageLeft,
+  ImageRight,
+  ListWrapper,
+  Text,
+  Title,
+} from './Values.styled';
 import { ValueList } from './ValueList';
 
 export const Values = () => {
@@ -16,7 +23,55 @@ export const Values = () => {
             meet the world's energy needs.
           </Text>
         </ContentWrapper>
-        <ValueList />
+
+        <ListWrapper>
+          <ValueList />
+          <picture>
+            <source
+              srcSet={`${require('../../images/wind-farms-fields-desktop.jpg')}`}
+              media="(min-width: 1440px)"
+              width="596"
+              height="339"
+            />
+
+            <source
+              srcSet={`${require('../../images/wind-farms-fields-tablet.jpg')}`}
+              media="(min-width: 768px)"
+              width="342"
+              height="197"
+            />
+
+            <ImageRight
+              src={`${require('../../images/wind-farms-fields-tablet.jpg')}`}
+              alt="two wokers on wind farms fields"
+              width="342"
+              height="197"
+            />
+          </picture>
+
+          <picture>
+            <source
+              srcSet={`${require('../../images/man-worker-firld-by-solar-panels-desktop.jpg')}`}
+              media="(min-width: 1440px)"
+              width="596"
+              height="339"
+            />
+
+            <source
+              srcSet={`${require('../../images/man-worker-firld-by-solar-panels-tablet.jpg')}`}
+              media="(min-width: 768px)"
+              width="342"
+              height="197"
+            />
+
+            <ImageLeft
+              src={`${require('../../images/man-worker-firld-by-solar-panels-tablet.jpg')}`}
+              alt="man worker firld by solar panels"
+              width="342"
+              height="197"
+            />
+          </picture>
+        </ListWrapper>
       </Container>
     </Section>
   );
