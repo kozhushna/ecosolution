@@ -31,7 +31,7 @@ export const HeroTitle = styled.h1`
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
-    max-width: 485px;
+    min-width: 485px;
     font-size: 64px;
   }
 `;
@@ -75,16 +75,21 @@ export const Link = styled.a`
 `;
 
 export const ContentWrapper = styled.div`
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid ${props => props.theme.colors.accent};
+
   @media screen and (${props => props.theme.devices.tablet}) {
     display: flex;
-    justify-content: space-between;
     gap: 65px;
+    padding-bottom: 26px;
+    margin-bottom: 16px;
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
-    display: flex;
-    /* justify-content: space-between; */
     gap: 296px;
+    padding-bottom: 28px;
+    margin-bottom: 12px;
   }
 `;
 
@@ -92,5 +97,22 @@ export const TextWrapper = styled.div`
   @media screen and (${props => props.theme.devices.tablet}) {
     display: flex;
     flex-direction: column;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (${props => props.theme.devices.desktop}) {
+  }
+`;
+
+export const Image = styled.img`
+  display: block;
+  margin: 36px auto 0;
+
+  @media screen and (${props => props.theme.devices.tablet}) {
+    margin: 40px auto 0;
+  }
+
+  @media screen and (${props => props.theme.devices.desktop}) {
+    margin: 36px auto 0;
   }
 `;

@@ -2,7 +2,7 @@ export const sizes = {
   // onlymobile: '480',
   mobile: '480',
   tablet: '768',
-  desktop: '1280',
+  desktop: '1440',
 };
 
 export const theme = Object.freeze({
