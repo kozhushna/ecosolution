@@ -1,3 +1,4 @@
+import { Cases } from 'components/Cases/Cases';
 import { Electricity } from 'components/Electricity/Electricity';
 import { Hero } from 'components/Hero/Hero';
 import { Values } from 'components/Values/Values';
@@ -9,6 +10,7 @@ function App() {
         <Hero />
         <Values />
         <Electricity />
+        <Cases />
       </main>
     </>
   );
