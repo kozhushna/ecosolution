@@ -1,3 +1,4 @@
+import { Electricity } from 'components/Electricity/Electricity';
 import { Hero } from 'components/Hero/Hero';
 import { Values } from 'components/Values/Values';
 
@@ -7,6 +8,7 @@ function App() {
       <main>
         <Hero />
         <Values />
+        <Electricity />
       </main>
     </>
   );
