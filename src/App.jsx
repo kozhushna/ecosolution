@@ -1,9 +1,13 @@
 import { Hero } from 'components/Hero/Hero';
+import { Values } from 'components/Values/Values';
 
 function App() {
   return (
     <>
-      <Hero />
+      <main>
+        <Hero />
+        <Values />
+      </main>
     </>
   );
 }
