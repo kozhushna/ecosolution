@@ -1,4 +1,4 @@
-export const sliderData = [
+export const casesData = [
   {
     id: 1,
     image: `${require('../images/slide-1.jpg')}`,

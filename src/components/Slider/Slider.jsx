@@ -20,9 +20,8 @@ import {
   SwiperControl,
   TitleWrapper,
 } from './Slider.styled';
-import { sliderData } from 'utils/sliderData';
 
-export const Slider = () => {
+export const Slider = ({ data }) => {
   const [swiperRef, setSwiperRef] = useState(null);
   const [togglePageInfo, setTogglePageInfo] = useState(false);
   const pagingInfo = useRef(null);
@@ -53,10 +52,18 @@ export const Slider = () => {
       <SwiperControl>
         <PagingInfo ref={pagingInfo} className="paging-info"></PagingInfo>
         <ButtonsHolder>
-          <ButtonNav type="button" onClick={handlePrevClick}>
+          <ButtonNav
+            type="button"
+            aria-label="Go to previous slide"
+            onClick={handlePrevClick}
+          >
             <Svg w={36} h={36} icon={'arrow-left'}></Svg>
           </ButtonNav>
-          <ButtonNav type="button" onClick={handleNextClick}>
+          <ButtonNav
+            type="button"
+            aria-label="Go to next slide"
+            onClick={handleNextClick}
+          >
             <Svg w={36} h={36} icon={'arrow-right'}></Svg>
           </ButtonNav>
         </ButtonsHolder>
@@ -85,7 +92,7 @@ export const Slider = () => {
         loop={true}
         onSlideChange={() => setTogglePageInfo(!togglePageInfo)}
       >
-        {sliderData.map(el => {
+        {data.map(el => {
           return (
             <SlideItem key={el.id}>
               <picture>
