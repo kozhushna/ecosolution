@@ -1,6 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
-// import 'swiper/css/autoplay';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -21,54 +20,33 @@ import { sliderData } from 'utils/sliderData';
 
 export const Slider = () => {
   const [swiperRef, setSwiperRef] = useState(null);
-  //   const [slidesCount, setSlidersCount] = useState();
+  const [togglePageInfo, setTogglePageInfo] = useState(false);
+  const pagingInfo = useRef(null);
 
-  //   useEffect(() => {
-  //     window.addEventListener('resize', handleScreenWidth);
-  //     return () => window.removeEventListener('resize', handleScreenWidth);
-  //   }, [slidesCount]);
+  useEffect(() => {
+    updatePagingInfo();
+  }, [togglePageInfo]);
 
-  //   const handleScreenWidth = () => {
-  //     if (window.innerWidth > 1199) {
-  //       setSlidersCount(3);
-  //     }
-  //     if ((window.innerWidth < 1200) & (window.innerWidth > 767)) {
-  //       setSlidersCount(2);
-  //     }
-  //     if (window.innerWidth < 767) {
-  //       setSlidersCount(1);
-  //     }
-  //   };
+  const updatePagingInfo = () => {
+    const current = pagingInfo.current.children[0];
+    const total = pagingInfo.current.children[1];
 
-  //   const initialSlidesCount = () => {
-  //     if (slidesCount) {
-  //       return slidesCount;
-  //     }
-  //     if (window.innerWidth > 1199) {
-  //       return 3;
-  //     }
-  //     if ((window.innerWidth < 1200) & (window.innerWidth > 767)) {
-  //       return 2;
-  //     }
-  //     if (window.innerWidth < 768) {
-  //       return 1;
-  //     }
-  //   };
+    if (current && total) {
+      current.innerText = current.innerText.padStart(2, '0');
+      total.innerText = total.innerText.padStart(2, '0');
+    }
+  };
 
   const handlePrevClick = () => {
-    swiperRef.slideTo(swiperRef.activeIndex - 1, 0);
+    swiperRef.slidePrev();
   };
   const handleNextClick = () => {
-    console.log(swiperRef.activeIndex);
-    // let idx = swiperRef.activeIndex;
-    // if (idx > 2) {
-    //   idx = 0;
-    // }
-    swiperRef.slideTo(swiperRef.activeIndex + 1, 0);
+    swiperRef.slideNext();
   };
+
   return (
     <>
-      <div className="pagination"></div>
+      <div ref={pagingInfo} className="paging-info"></div>
       <div>
         <button type="button" onClick={handlePrevClick}>
           Prev
@@ -77,58 +55,61 @@ export const Slider = () => {
           Next
         </button>
       </div>
-      {/* <div class="swiper-button-prev">p</div>
-      <div class="swiper-button-next">n</div> */}
       <SlideList
         modules={[Virtual, Navigation, Pagination]}
         onSwiper={setSwiperRef}
-        spaceBetween={16}
-        slidesPerView={2}
-        // centeredSlides={true}
-        // loop={true}
-        pagination={{ el: '.pagination', type: 'fraction' }}
-        // navigation={{
-        //   nextEl: '.swiper-button-next',
-        //   prevEl: '.swiper-button-prev',
-        // }}
-        // autoplay={{ delay: 7000, disableOnInteraction: false }}
+        spaceBetween={24}
+        breakpoints={{
+          360: {
+            slidesPerView: 1,
+          },
+          480: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1440: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+          },
+        }}
+        pagination={{ el: '.paging-info', type: 'fraction' }}
         loop={true}
-        // speed={1500}
-        // navigation={true}
+        onSlideChange={() => setTogglePageInfo(!togglePageInfo)}
       >
-        <>
-          {sliderData.map(el => {
-            return (
-              <SlideItem key={el.id}>
-                <picture>
-                  <source srcSet={`${el.image}`} />
-                  <SlideImage
-                    src={el.image}
-                    alt={`${el.description}`}
-                    width={320}
-                    height={168}
-                  />
-                </picture>
-                <ContentWrapper>
-                  <TitleWrapper>
-                    <SlideTitle>{el.title}</SlideTitle>
-                    <GoLink
-                      ahref="http://example.com"
-                      aria-label="Go to site"
-                      target="_blank"
-                    >
-                      <Svg icon="arrow-angle" w={28} h={28}></Svg>
-                    </GoLink>
-                  </TitleWrapper>
-                  <DescriptionWrapper>
-                    <SlideDescription>{el.description}</SlideDescription>
-                    <SlideDate>{el.date}</SlideDate>
-                  </DescriptionWrapper>
-                </ContentWrapper>
-              </SlideItem>
-            );
-          })}
-        </>
+        {sliderData.map(el => {
+          return (
+            <SlideItem key={el.id}>
+              <picture>
+                <source srcSet={`${el.image}`} />
+                <SlideImage
+                  src={el.image}
+                  alt={`${el.description}`}
+                  width={320}
+                  height={168}
+                />
+              </picture>
+              <ContentWrapper>
+                <TitleWrapper>
+                  <SlideTitle>{el.title}</SlideTitle>
+                  <GoLink
+                    ahref="http://example.com"
+                    aria-label="Go to site"
+                    target="_blank"
+                  >
+                    <Svg icon="arrow-angle" w={28} h={28}></Svg>
+                  </GoLink>
+                </TitleWrapper>
+                <DescriptionWrapper>
+                  <SlideDescription>{el.description}</SlideDescription>
+                  <SlideDate>{el.date}</SlideDate>
+                </DescriptionWrapper>
+              </ContentWrapper>
+            </SlideItem>
+          );
+        })}
       </SlideList>
     </>
   );
