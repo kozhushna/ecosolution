@@ -7,16 +7,21 @@ export const SlideList = styled(Swiper)`
 `;
 
 export const SlideItem = styled(SwiperSlide)`
-  max-width: 320px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 
+  max-width: 320px;
+  min-height: 318px;
   background-color: ${props => props.theme.colors.grayBackground};
 
   @media screen and (${props => props.theme.devices.tablet}) {
     max-width: 342px;
+    min-height: 322px;
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
     max-width: 596px;
+    min-height: 506px;
   }
 `;
 
@@ -76,48 +81,58 @@ export const GoLink = styled.a`
   }
 `;
 
-export const ContentWrapper = styled.div`
-  padding: 24px 12px 12px 12px;
-
-  @media screen and (${props => props.theme.devices.desktop}) {
-    padding: 36px 48px;
-  }
-`;
-
 export const TitleWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-  padding-bottom: 21px;
-  border-bottom: 1px solid ${props => props.theme.colors.accent};
+  align-items: start;
+  padding: 24px 12px 0 12px;
 
   @media screen and (${props => props.theme.devices.tablet}) {
     padding-bottom: 16px;
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
-    margin-bottom: 24px;
-    padding-bottom: 36px;
+    padding: 36px 48px 0 48px;
   }
 `;
 
 export const DescriptionWrapper = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  padding: 12px;
   font-size: 12px;
   letter-spacing: -0.48px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12px;
+    max-width: 296px;
+    width: 100%;
+    border-bottom: 1px solid ${props => props.theme.colors.accent};
+  }
 
   @media screen and (${props => props.theme.devices.tablet}) {
     font-size: 14px;
     letter-spacing: -0.56px;
+
+    &::before {
+      max-width: 318px;
+    }
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
+    padding: 24px 48px 36px 48px;
     font-size: 16px;
     letter-spacing: -0.64px;
+
+    &::before {
+      left: 48px;
+      max-width: 500px;
+    }
   }
 `;
 

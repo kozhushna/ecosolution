@@ -104,22 +104,20 @@ export const Slider = ({ data }) => {
                   height={168}
                 />
               </picture>
-              <ContentWrapper>
-                <TitleWrapper>
-                  <SlideTitle>{el.title}</SlideTitle>
-                  <GoLink
-                    ahref="http://example.com"
-                    aria-label="Go to site"
-                    target="_blank"
-                  >
-                    <Svg icon="arrow-angle" w={28} h={28}></Svg>
-                  </GoLink>
-                </TitleWrapper>
-                <DescriptionWrapper>
-                  <SlideDescription>{el.description}</SlideDescription>
-                  <SlideDate>{el.date}</SlideDate>
-                </DescriptionWrapper>
-              </ContentWrapper>
+              <TitleWrapper>
+                <SlideTitle>{el.title}</SlideTitle>
+                <GoLink
+                  ahref="http://example.com"
+                  aria-label="Go to site"
+                  target="_blank"
+                >
+                  <Svg icon="arrow-angle" w={28} h={28}></Svg>
+                </GoLink>
+              </TitleWrapper>
+              <DescriptionWrapper>
+                <SlideDescription>{el.description}</SlideDescription>
+                <SlideDate>{el.date}</SlideDate>
+              </DescriptionWrapper>
             </SlideItem>
           );
         })}
