@@ -120,3 +120,57 @@ export const DescriptionWrapper = styled.div`
     letter-spacing: -0.64px;
   }
 `;
+
+export const ButtonsHolder = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+`;
+
+export const SwiperControl = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 19px;
+
+  @media screen and (${props => props.theme.devices.tablet}) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 120px;
+  }
+
+  @media screen and (${props => props.theme.devices.desktop}) {
+    gap: 193px;
+  }
+`;
+
+export const PagingInfo = styled.div`
+  color: ${props => props.theme.colors.gray};
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -1.12px;
+  text-align: left;
+  .swiper-pagination-current {
+    color: ${props => props.theme.colors.primary};
+  }
+`;
+
+export const ButtonNav = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid ${props => props.theme.colors.primary};
+  transition: border-color ${props => props.theme.baseTransition},
+    fill ${props => props.theme.baseTransition};
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: ${props => props.theme.colors.accent};
+    fill: ${props => props.theme.colors.accent};
+  }
+`;

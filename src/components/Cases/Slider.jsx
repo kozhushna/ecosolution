@@ -5,15 +5,19 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Svg } from 'components/SvgIcon/SvgIcon';
 import {
+  ButtonNav,
+  ButtonsHolder,
   ContentWrapper,
   DescriptionWrapper,
   GoLink,
+  PagingInfo,
   SlideDate,
   SlideDescription,
   SlideImage,
   SlideItem,
   SlideList,
   SlideTitle,
+  SwiperControl,
   TitleWrapper,
 } from './Slider.styled';
 import { sliderData } from 'utils/sliderData';
@@ -46,15 +50,17 @@ export const Slider = () => {
 
   return (
     <>
-      <div ref={pagingInfo} className="paging-info"></div>
-      <div>
-        <button type="button" onClick={handlePrevClick}>
-          Prev
-        </button>
-        <button type="button" onClick={handleNextClick}>
-          Next
-        </button>
-      </div>
+      <SwiperControl>
+        <PagingInfo ref={pagingInfo} className="paging-info"></PagingInfo>
+        <ButtonsHolder>
+          <ButtonNav type="button" onClick={handlePrevClick}>
+            <Svg w={36} h={36} icon={'arrow-left'}></Svg>
+          </ButtonNav>
+          <ButtonNav type="button" onClick={handleNextClick}>
+            <Svg w={36} h={36} icon={'arrow-right'}></Svg>
+          </ButtonNav>
+        </ButtonsHolder>
+      </SwiperControl>
       <SlideList
         modules={[Virtual, Navigation, Pagination]}
         onSwiper={setSwiperRef}
