@@ -33,5 +33,5 @@ export const theme = Object.freeze({
     retina: 'min-device-pixel-ratio: 2',
   },
 
-  baseTransition: '250ms cubic-bezier(0.4, 0, 0.2, 1)',
+  baseTransition: '2500ms cubic-bezier(0.4, 0, 0.2, 1)',
 });

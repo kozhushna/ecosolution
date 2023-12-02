@@ -21,11 +21,11 @@ export const Item = styled.li`
   background-color: ${props => props.theme.colors.grayBackground};
 
   @media screen and (${props => props.theme.devices.tablet}) {
-    &:nth-child(3) {
+    &:nth-of-type(3) {
       grid-row-start: 2;
       grid-column-start: 3;
     }
-    &:nth-child(4) {
+    &:nth-of-type(4) {
       grid-row-start: 2;
       grid-column-start: 4;
     }
