@@ -12,7 +12,7 @@ function App() {
         <Values />
         <Electricity />
         <Cases />
-        {/* <Faq /> */}
+        <Faq />
       </main>
     </>
   );

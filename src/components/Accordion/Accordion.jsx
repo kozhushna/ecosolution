@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Svg } from 'components/SvgIcon/SvgIcon';
 import {
   AccordionHolder,
   Description,
@@ -19,9 +20,17 @@ export const Accordion = ({ data, selectedIndex }) => {
     <AccordionHolder>
       {data.map(({ id, question, answer }, index) => (
         <Item key={id}>
-          <TitleWrapper onClick={() => toggle(index)}>
+          <TitleWrapper
+            onClick={() => toggle(index)}
+            className={selected === index ? 'show ' : ''}
+          >
+            {/* <span>{selected === index ? '-' : '+'}</span> */}
+            <Svg
+              icon={selected === index ? 'minus' : 'add'}
+              w={16}
+              h={16}
+            ></Svg>
             <Title>{question}</Title>
-            <span>{selected === index ? '-' : '+'}</span>
           </TitleWrapper>
           <Description
             className={selected === index ? 'content show ' : 'content'}
