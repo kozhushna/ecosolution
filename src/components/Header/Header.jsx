@@ -3,9 +3,11 @@ import { Modal } from 'components/Modal/Modal';
 import { useModal } from 'hooks/useModal';
 import { Container } from 'App.styled';
 import {
+  ButtonHolder,
   HeaderLink,
   HeaderSection,
   HeaderWrapper,
+  MenuButton,
   SvgWrapper,
 } from './Header.styled';
 import { Svg } from 'components/SvgIcon/SvgIcon';
@@ -39,16 +41,22 @@ export const Header = () => {
         <Container>
           <HeaderWrapper>
             <Logo />
-            <button type="button" aria-label="Open menu" onClick={openModal}>
-              <Svg w={36} h={36} icon="menu" />
-            </button>
+            <ButtonHolder>
+              <MenuButton
+                type="button"
+                aria-label="Open menu"
+                onClick={openModal}
+              >
+                <Svg w={16} h={16} icon="menu" />
+              </MenuButton>
 
-            <HeaderLink href="google.com">
-              Get in touch
-              <SvgWrapper>
-                <Svg w={14} h={14} icon="arrow-top" />
-              </SvgWrapper>
-            </HeaderLink>
+              <HeaderLink href="google.com">
+                Get in touch
+                <SvgWrapper>
+                  <Svg w={14} h={14} icon="arrow-top" />
+                </SvgWrapper>
+              </HeaderLink>
+            </ButtonHolder>
           </HeaderWrapper>
         </Container>
       </HeaderSection>

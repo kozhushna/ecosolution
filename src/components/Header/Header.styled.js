@@ -27,11 +27,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const HeaderLink = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-
+  display: none;
   width: 100%;
   max-width: 150px;
   height: max-content;
@@ -51,6 +47,13 @@ export const HeaderLink = styled.a`
     background-color: ${props => props.theme.colors.accent};
     fill: ${props => props.theme.colors.primary};
   }
+
+  @media screen and (${props => props.theme.devices.tablet}) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
 `;
 
 export const SvgWrapper = styled.div`
@@ -61,4 +64,27 @@ export const SvgWrapper = styled.div`
   rotate: 180deg;
 
   fill: ${props => props.theme.colors.accent};
+`;
+
+export const MenuButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background-color: ${props => props.theme.colors.burger};
+  transition: background-color ${props => props.theme.baseTransition};
+
+  &:hover,
+  &:focus {
+    background-color: ${props => props.theme.colors.accent};
+  }
+`;
+
+export const ButtonHolder = styled.div`
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  /* width: 100%; */
 `;

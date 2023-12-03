@@ -16,7 +16,7 @@ export const theme = Object.freeze({
     menuBackground: 'rgba(23, 61, 51, 0.75)',
 
     gray: 'rgba(23, 61, 51, 0.25)',
-    burger: '#292D32',
+    burger: '#DCEFD8',
 
     backdrop: 'rgba(23, 61, 51, 0.25)',
 
