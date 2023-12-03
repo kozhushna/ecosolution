@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.65dc5ba3.css",
-    "main.js": "/ecosolution/static/js/main.661d4a62.js",
+    "main.js": "/ecosolution/static/js/main.7a6d2f77.js",
     "static/media/FiraSans-Regular.ttf": "/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/FiraSans-Light.ttf": "/ecosolution/static/media/FiraSans-Light.7ece67e11e181a7292ef.ttf",
     "static/media/wind-turbine-desktop@2x.jpg": "/ecosolution/static/media/wind-turbine-desktop@2x.c7dacde6e99d972e14d9.jpg",
@@ -15,19 +15,19 @@
     "static/media/slide-2.jpg": "/ecosolution/static/media/slide-2.5b2d0a9af8be5e9846be.jpg",
     "static/media/slide-3.jpg": "/ecosolution/static/media/slide-3.75e29f51e08b7e8cf651.jpg",
     "static/media/slide-5.jpg": "/ecosolution/static/media/slide-5.4c4a3a42f2f20f204c89.jpg",
+    "static/media/sprite.svg": "/ecosolution/static/media/sprite.4a21cd847c0a91111b155a1705d78042.svg",
     "static/media/slide-1.jpg": "/ecosolution/static/media/slide-1.29ddc1d76abe6f57e9ad.jpg",
     "static/media/wind-farms-fields-desktop.jpg": "/ecosolution/static/media/wind-farms-fields-desktop.779266bed255db8c76bb.jpg",
-    "static/media/sprite.svg": "/ecosolution/static/media/sprite.f0efc7d73f2b0b59c6f6d7b7a69ab730.svg",
     "static/media/Fontspring-DEMO-allroundgothic-thick.otf": "/ecosolution/static/media/Fontspring-DEMO-allroundgothic-thick.a3cc674d03213c20323d.otf",
     "static/media/slide-4.jpg": "/ecosolution/static/media/slide-4.c4fcc10eab19d9f11e0d.jpg",
     "static/media/man-worker-firld-by-solar-panels-desktop.jpg": "/ecosolution/static/media/man-worker-firld-by-solar-panels-desktop.07916a6f53c04cbe1de6.jpg",
     "static/media/wind-turbine-mobile.jpg": "/ecosolution/static/media/wind-turbine-mobile.84c09e490ee44a895721.jpg",
     "index.html": "/ecosolution/index.html",
     "main.65dc5ba3.css.map": "/ecosolution/static/css/main.65dc5ba3.css.map",
-    "main.661d4a62.js.map": "/ecosolution/static/js/main.661d4a62.js.map"
+    "main.7a6d2f77.js.map": "/ecosolution/static/js/main.7a6d2f77.js.map"
   },
   "entrypoints": [
     "static/css/main.65dc5ba3.css",
-    "static/js/main.661d4a62.js"
+    "static/js/main.7a6d2f77.js"
   ]
 }
