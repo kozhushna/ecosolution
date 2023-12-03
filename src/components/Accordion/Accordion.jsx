@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Svg } from 'components/SvgIcon/SvgIcon';
 import {
-  AccordionHolder,
+  AccordionList,
   Description,
   Item,
+  SvgHolder,
+  TextWrapper,
   Title,
-  TitleWrapper,
 } from './Accordion.styled';
 
 export const Accordion = ({ data, selectedIndex }) => {
@@ -17,28 +18,32 @@ export const Accordion = ({ data, selectedIndex }) => {
     setSelected(index);
   };
   return (
-    <AccordionHolder>
+    <AccordionList>
       {data.map(({ id, question, answer }, index) => (
         <Item key={id}>
-          <TitleWrapper
-            onClick={() => toggle(index)}
+          <SvgHolder
             className={selected === index ? 'show ' : ''}
+            onClick={() => toggle(index)}
           >
-            {/* <span>{selected === index ? '-' : '+'}</span> */}
             <Svg
               icon={selected === index ? 'minus' : 'add'}
               w={16}
               h={16}
             ></Svg>
-            <Title>{question}</Title>
-          </TitleWrapper>
-          <Description
-            className={selected === index ? 'content show ' : 'content'}
+          </SvgHolder>
+          <TextWrapper
+            onClick={() => toggle(index)}
+            className={selected === index ? 'show ' : ''}
           >
-            {answer}
-          </Description>
+            <Title>{question}</Title>
+            <Description
+              className={selected === index ? 'content show ' : 'content'}
+            >
+              {answer}
+            </Description>
+          </TextWrapper>
         </Item>
       ))}
-    </AccordionHolder>
+    </AccordionList>
   );
 };
