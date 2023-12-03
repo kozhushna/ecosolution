@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -7,7 +7,6 @@ import { Svg } from 'components/SvgIcon/SvgIcon';
 import {
   ButtonNav,
   ButtonsHolder,
-  ContentWrapper,
   DescriptionWrapper,
   GoLink,
   PagingInfo,
@@ -23,22 +22,7 @@ import {
 
 export const Slider = ({ data }) => {
   const [swiperRef, setSwiperRef] = useState(null);
-  const [togglePageInfo, setTogglePageInfo] = useState(false);
   const pagingInfo = useRef(null);
-
-  useEffect(() => {
-    updatePagingInfo();
-  }, [togglePageInfo]);
-
-  const updatePagingInfo = () => {
-    const current = pagingInfo.current.children[0];
-    const total = pagingInfo.current.children[1];
-
-    if (current && total) {
-      current.innerText = current.innerText.padStart(2, '0');
-      total.innerText = total.innerText.padStart(2, '0');
-    }
-  };
 
   const handlePrevClick = () => {
     swiperRef.slidePrev();
@@ -88,9 +72,19 @@ export const Slider = ({ data }) => {
             spaceBetween: 48,
           },
         }}
-        pagination={{ el: '.paging-info', type: 'fraction' }}
+        pagination={{
+          el: '.paging-info',
+          type: 'custom',
+          renderCustom: function (swiper, current, total) {
+            return (
+              current.toString().padStart(2, '0') +
+              '<span> /' +
+              total.toString().padStart(2, '0') +
+              '</span>'
+            );
+          },
+        }}
         loop={true}
-        onSlideChange={() => setTogglePageInfo(!togglePageInfo)}
       >
         {data.map(el => {
           return (

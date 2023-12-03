@@ -150,24 +150,26 @@ export const SwiperControl = styled.div`
 
   @media screen and (${props => props.theme.devices.tablet}) {
     position: absolute;
-    top: 0;
+    top: 6px;
     right: 0;
     gap: 120px;
+    margin-bottom: 0;
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
     gap: 193px;
+    top: 24px;
   }
 `;
 
 export const PagingInfo = styled.div`
-  color: ${props => props.theme.colors.gray};
+  color: ${props => props.theme.colors.primary};
   font-size: 28px;
   font-weight: 300;
   letter-spacing: -1.12px;
   text-align: left;
-  .swiper-pagination-current {
-    color: ${props => props.theme.colors.primary};
+  span {
+    color: ${props => props.theme.colors.gray};
   }
 `;
 
