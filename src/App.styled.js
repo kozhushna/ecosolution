@@ -3,18 +3,18 @@ import styled from '@emotion/styled';
 export const Section = styled.section`
   background-color: ${props => props.theme.colors.mainBackground};
   padding-bottom: 36px;
-  /* &[id] {
+  &[id] {
     &::before {
       content: '';
       display: block;
-      height: 62px;
-      margin-top: -62px;
-      @media screen and (${props => props.theme.devices.tablet}) {
+      height: 112px;
+      margin-top: -112px;
+      /* @media screen and (${props => props.theme.devices.tablet}) {
         height: 80px;
         margin-top: -80px;
-      }
+      } */
     }
-  } */
+  }
 
   @media screen and (${props => props.theme.devices.tablet}) {
     padding-bottom: 100px;

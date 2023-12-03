@@ -2,14 +2,17 @@ import styled from '@emotion/styled';
 import { Section } from 'App.styled';
 
 export const HeroSection = styled(Section)`
-  padding: 146px 0 36px;
+  padding-top: 24px;
+  /* padding: 24px 0 36px 0; */
 
   @media screen and (${props => props.theme.devices.tablet}) {
-    padding: 164px 0 100px;
+    /* padding: 52px 0 100px 0; */
+    padding-top: 52px;
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
-    padding: 200px 0 120px;
+    padding-top: 78px;
+    /* padding: 78px 0 120px 0; */
   }
 `;
 

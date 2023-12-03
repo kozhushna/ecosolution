@@ -11,7 +11,7 @@ import { ValueList } from './ValueList';
 
 export const Values = () => {
   return (
-    <Section>
+    <Section id="values">
       <Container>
         <ContentWrapper>
           <Title>Main values of our company</Title>

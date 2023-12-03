@@ -5,7 +5,7 @@ import { casesData } from 'utils/casesData';
 
 export const Cases = () => {
   return (
-    <Section>
+    <Section id="cases">
       <Container>
         <ControlWrapper>
           <Title>Successful cases of our company</Title>

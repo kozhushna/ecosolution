@@ -13,7 +13,7 @@ import { ContactInfo } from 'components/ContactInfo/ContactInfo';
 export const Hero = () => {
   return (
     <>
-      <HeroSection>
+      <HeroSection id="hero">
         <Container>
           <ContentWrapper>
             <HeroTitle>Renewable energy for any task</HeroTitle>

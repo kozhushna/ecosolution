@@ -5,7 +5,7 @@ import { faqData } from 'utils/faqData';
 
 export const Faq = () => {
   return (
-    <Section>
+    <Section id="faq">
       <Container>
         <Title>Frequently Asked Questions</Title>
         <Accordion data={faqData} selectedIndex={0} />

@@ -63,6 +63,7 @@ export const GlobalStyles = css`
   }
 
   body {
+    padding-top: 112px;
     min-height: 100vh;
     margin: 0;
     font-family: 'FiraSans', sans-serif;
