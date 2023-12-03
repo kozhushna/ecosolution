@@ -11,7 +11,7 @@ export const HeroSection = styled(Section)`
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
-    padding-top: 78px;
+    padding-top: 50px;
     /* padding: 78px 0 120px 0; */
   }
 `;

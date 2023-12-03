@@ -10,6 +10,7 @@ import {
 } from './Header.styled';
 import { Svg } from 'components/SvgIcon/SvgIcon';
 import { Menu } from 'Navigation/Menu';
+import { Logo } from 'components/Logo/Logo';
 
 export const Header = () => {
   const { isModalOpen, openModal, closeModal } = useModal();
@@ -37,7 +38,7 @@ export const Header = () => {
       <HeaderSection className={isScrolled ? 'scroll' : ''}>
         <Container>
           <HeaderWrapper>
-            <p>Logo</p>
+            <Logo />
             <button type="button" aria-label="Open menu" onClick={openModal}>
               <Svg w={36} h={36} icon="menu" />
             </button>
