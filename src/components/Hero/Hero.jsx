@@ -9,6 +9,8 @@ import {
   TextWrapper,
 } from './Hero.styled';
 import { ContactInfo } from 'components/ContactInfo/ContactInfo';
+import { Svg } from 'components/SvgIcon/SvgIcon';
+import { SvgWrapper } from 'components/ContactForm/ContactForm.styled';
 
 export const Hero = () => {
   return (
@@ -23,7 +25,12 @@ export const Hero = () => {
                 sources, generating power generation using energy wind, sun,
                 water, biomass
               </Text>
-              <Link href="google.com">Learn more</Link>
+              <Link href="#cases">
+                Learn more
+                <SvgWrapper>
+                  <Svg w={16} h={16} icon="arrow-right" />
+                </SvgWrapper>
+              </Link>
             </TextWrapper>
           </ContentWrapper>
           <ContactInfo />

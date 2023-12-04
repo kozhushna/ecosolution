@@ -15,3 +15,5 @@ export const Title = styled(SectionTitle)`
     max-width: 365px;
   }
 `;
+
+export const ContentWrapper = styled.div``;

@@ -42,6 +42,7 @@ export const Container = styled.div`
 `;
 
 export const SectionTitle = styled.h2`
+  margin-bottom: 24px;
   color: ${props => props.theme.colors.primary};
   font-family: 'Oswald';
   font-size: 28px;
@@ -51,10 +52,12 @@ export const SectionTitle = styled.h2`
   text-transform: uppercase;
 
   @media screen and (${props => props.theme.devices.tablet}) {
+    margin-bottom: 40px;
     font-size: 36px;
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
+    margin-bottom: 120px;
     font-size: 48px;
   }
 `;

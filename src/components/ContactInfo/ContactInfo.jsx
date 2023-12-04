@@ -1,6 +1,6 @@
 import { ContactItem, ContactLink, Contactlist } from './ContactInfo.styled';
 
-export const ContactInfo = () => {
+export const ContactInfo = ({ place }) => {
   return (
     <Contactlist>
       <ContactItem>
@@ -12,12 +12,12 @@ export const ContactInfo = () => {
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </ContactLink>
       </ContactItem>
-      <ContactItem>
+      <ContactItem className={place}>
         <ContactLink href="mailto:office@ecosolution.com">
           office@ecosolution.com
         </ContactLink>
       </ContactItem>
-      <ContactItem>ecosolution © 2023</ContactItem>
+      <ContactItem className={place}> ecosolution © 2023</ContactItem>
     </Contactlist>
   );
 };

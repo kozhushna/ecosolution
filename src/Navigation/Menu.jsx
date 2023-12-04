@@ -35,7 +35,7 @@ export const Menu = ({ close }) => {
               <NavigationLink text="FAQ" url="#faq" />
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink text="Contact Us" url="#faq" />
+              <NavigationLink text="Contact Us" url="#contacts" />
             </NavigationItem>
           </NavigationList>
         </nav>

@@ -4,10 +4,14 @@ export const Contactlist = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 24px;
   font-size: 20px;
   letter-spacing: -0.8px;
   text-align: left;
 
+  @media screen and (${props => props.theme.devices.tablet}) {
+    margin-bottom: 0;
+  }
   @media screen and (${props => props.theme.devices.desktop}) {
     gap: 32px;
   }
@@ -40,5 +44,12 @@ export const ContactLink = styled.a`
   &:focus {
     color: ${props => props.theme.colors.accent};
     fill: ${props => props.theme.colors.accent};
+  }
+`;
+
+export const ContentHolder = styled.div`
+  @media screen and (${props => props.theme.devices.tablet}) {
+    display: flex;
+    justify-content: space-between;
   }
 `;

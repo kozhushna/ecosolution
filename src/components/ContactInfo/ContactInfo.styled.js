@@ -17,8 +17,18 @@ export const ContactItem = styled.li`
     margin-bottom: 8px;
   }
 
+  &:nth-of-type(2) {
+    &.footer {
+      margin-bottom: 8px;
+    }
+  }
+
   &:nth-of-type(3) {
     display: none;
+
+    &.footer {
+      display: inline;
+    }
   }
   @media screen and (${props => props.theme.devices.tablet}) {
     &:nth-of-type(1) {

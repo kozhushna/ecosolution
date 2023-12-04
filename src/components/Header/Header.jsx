@@ -50,7 +50,7 @@ export const Header = () => {
                 <Svg w={16} h={16} icon="menu" />
               </MenuButton>
 
-              <HeaderLink href="google.com">
+              <HeaderLink href="#contacts">
                 Get in touch
                 <SvgWrapper>
                   <Svg w={14} h={14} icon="arrow-top" />
