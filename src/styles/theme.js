@@ -1,5 +1,4 @@
 export const sizes = {
-  // onlymobile: '480',
   mobile: '480',
   tablet: '768',
   desktop: '1440',

@@ -18,6 +18,7 @@ export const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   return (
@@ -25,6 +26,7 @@ export const ContactForm = () => {
       <Form
         onSubmit={handleSubmit(data => {
           console.log(data);
+          reset();
         })}
       >
         <TextWrapper>
@@ -99,7 +101,11 @@ export const ContactForm = () => {
         </TextWrapper>
         <TextWrapper>
           <Label>Message:</Label>
-          <Textarea type="text" placeholder="Your message" />
+          <Textarea
+            {...register('message')}
+            type="text"
+            placeholder="Your message"
+          />
         </TextWrapper>
 
         <SendButton type="submit">

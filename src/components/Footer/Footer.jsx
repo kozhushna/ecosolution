@@ -24,7 +24,6 @@ export const Footer = () => {
           </SocialWrapper>
         </LogoWrapper>
         <Sosial place="footer-middle" />
-
         <ContactInfo place="footer" />
       </FooterContainer>
     </Container>

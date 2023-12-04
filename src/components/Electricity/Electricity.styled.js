@@ -13,7 +13,6 @@ export const Title = styled(SectionTitle)`
     right: 50%;
     width: 100%;
     height: 48px;
-    /* transform: translate(-50%, -50%); */
     border-right: 1px solid ${props => props.theme.colors.accent};
   }
 

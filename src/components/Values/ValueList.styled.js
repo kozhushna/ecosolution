@@ -12,7 +12,6 @@ export const List = styled.ul`
   @media screen and (${props => props.theme.devices.desktop}) {
     grid-gap: 48px;
   }
-  /* grid-template-rows: repeat(2, 1fr); */
 `;
 
 export const Item = styled.li`

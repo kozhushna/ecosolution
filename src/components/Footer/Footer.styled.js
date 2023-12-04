@@ -59,7 +59,7 @@ export const SocialWrapper = styled.div`
     align-items: center;
   }
 
-  @media screen and (${props => props.theme.devices.desktop}) {
+  @media screen and (${props => props.theme.devices.destop}) {
     display: flex;
     gap: 371px;
     align-items: center;

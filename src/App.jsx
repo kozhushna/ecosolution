@@ -18,8 +18,8 @@ function App() {
         <Cases />
         <Faq />
         <ContactUs />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
