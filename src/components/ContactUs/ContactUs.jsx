@@ -6,8 +6,8 @@ import {
   ContactItem,
   ContactLink,
   Contactlist,
-  InfoWrapper,
 } from './ContactUs.styled';
+import { ContactForm } from 'components/ContactForm/ContactForm';
 
 export const ContactUs = () => {
   return (
@@ -53,6 +53,7 @@ export const ContactUs = () => {
             <Sosial place="contact" />
           </ContactItem>
         </Contactlist>
+        <ContactForm />
       </Container>
     </Section>
   );

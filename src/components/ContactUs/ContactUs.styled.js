@@ -42,5 +42,3 @@ export const ContactLink = styled.a`
     fill: ${props => props.theme.colors.accent};
   }
 `;
-
-export const InfoWrapper = styled.div``;
