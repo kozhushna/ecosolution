@@ -4,11 +4,11 @@ Renewable energy for any task
 
 ## Table of Contents
 
-- [Main](#hero)
-- [About](#values)
+- [Main](#main)
+- [About](#about)
 - [Cases](#cases)
 - [FAQ](#faq)
-- [Contact Us](#contacts)
+- [Contact Us](#contact-us)
 
 ## Main
 
@@ -32,6 +32,3 @@ implementation.
 
 Contact information for getting in touch with the organization behind the
 initiative. Implemented the ability to communicate using a specialized form.
-
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
