@@ -12,20 +12,22 @@ import { Svg } from 'components/SvgIcon/SvgIcon';
 
 export const Footer = () => {
   return (
-    <Container>
-      <FooterContainer>
-        <LogoWrapper>
-          <Logo />
-          <SocialWrapper>
-            <Sosial place="footer-top" />
-            <UpLink href="#hero" aria-label="Go to main">
-              <Svg w={16} h={16} icon="arrow-top" />
-            </UpLink>
-          </SocialWrapper>
-        </LogoWrapper>
-        <Sosial place="footer-middle" />
-        <ContactInfo place="footer" />
-      </FooterContainer>
-    </Container>
+    <footer>
+      <Container>
+        <FooterContainer>
+          <LogoWrapper>
+            <Logo />
+            <SocialWrapper>
+              <Sosial place="footer-top" />
+              <UpLink href="#hero" aria-label="Go to main">
+                <Svg w={16} h={16} icon="arrow-top" />
+              </UpLink>
+            </SocialWrapper>
+          </LogoWrapper>
+          <Sosial place="footer-middle" />
+          <ContactInfo place="footer" />
+        </FooterContainer>
+      </Container>
+    </footer>
   );
 };
