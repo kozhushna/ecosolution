@@ -86,5 +86,4 @@ export const ButtonHolder = styled.div`
   display: flex;
   gap: 12px;
   align-items: center;
-  /* width: 100%; */
 `;

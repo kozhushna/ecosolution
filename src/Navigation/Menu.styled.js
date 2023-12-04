@@ -5,7 +5,7 @@ export const MenuContent = styled.div`
   top: 36px;
   right: 50%;
   width: 100%;
-  height: calc(100vh - 72px);
+  height: calc(100svh - 72px);
   max-width: 320px;
   padding: 24px;
 
@@ -17,7 +17,7 @@ export const MenuContent = styled.div`
     top: 42px;
     right: 30px;
     transform: translate(0);
-    height: calc(100vh - 82px);
+    height: calc(100svh - 82px);
   }
 
   @media screen and (${props => props.theme.devices.desktop}) {
@@ -82,4 +82,11 @@ export const NavigationItem = styled.li`
     color: ${props => props.theme.colors.accent};
     fill: ${props => props.theme.colors.accent};
   }
+`;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 24px);
 `;

@@ -9,7 +9,7 @@ export const ContactInfo = () => {
           target="_blank"
           rel="noopener noreferrer nofollow "
         >
-          79005, Ukraine, Lviv street. Shota Rustaveli, 7
+          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </ContactLink>
       </ContactItem>
       <ContactItem>

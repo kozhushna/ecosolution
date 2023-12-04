@@ -9,10 +9,6 @@ export const Section = styled.section`
       display: block;
       height: 112px;
       margin-top: -112px;
-      /* @media screen and (${props => props.theme.devices.tablet}) {
-        height: 80px;
-        margin-top: -80px;
-      } */
     }
   }
 

@@ -41,7 +41,7 @@ export const ContactItem = styled.li`
     }
 
     &:nth-of-type(2) {
-      margin-right: 166px;
+      margin-right: 167px;
     }
   }
 `;

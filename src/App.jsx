@@ -1,4 +1,5 @@
 import { Cases } from 'components/Cases/Cases';
+import { ContactUs } from 'components/ContactUs/ContactUs';
 import { Electricity } from 'components/Electricity/Electricity';
 import { Faq } from 'components/Faq/Faq';
 import { Header } from 'components/Header/Header';
@@ -15,6 +16,7 @@ function App() {
         <Electricity />
         <Cases />
         <Faq />
+        <ContactUs />
       </main>
     </>
   );
