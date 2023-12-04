@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.65dc5ba3.css",
-    "main.js": "/ecosolution/static/js/main.b71ab2dc.js",
+    "main.js": "/ecosolution/static/js/main.1e557d79.js",
     "static/media/FiraSans-Regular.ttf": "/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/FiraSans-Light.ttf": "/ecosolution/static/media/FiraSans-Light.7ece67e11e181a7292ef.ttf",
     "static/media/wind-turbine-desktop@2x.jpg": "/ecosolution/static/media/wind-turbine-desktop@2x.c7dacde6e99d972e14d9.jpg",
@@ -24,10 +24,10 @@
     "static/media/wind-turbine-mobile.jpg": "/ecosolution/static/media/wind-turbine-mobile.84c09e490ee44a895721.jpg",
     "index.html": "/ecosolution/index.html",
     "main.65dc5ba3.css.map": "/ecosolution/static/css/main.65dc5ba3.css.map",
-    "main.b71ab2dc.js.map": "/ecosolution/static/js/main.b71ab2dc.js.map"
+    "main.1e557d79.js.map": "/ecosolution/static/js/main.1e557d79.js.map"
   },
   "entrypoints": [
     "static/css/main.65dc5ba3.css",
-    "static/js/main.b71ab2dc.js"
+    "static/js/main.1e557d79.js"
   ]
 }
