@@ -4,6 +4,14 @@ export const Sosiallist = styled.ul`
   display: flex;
   gap: 8px;
   align-items: center;
+
+  &.contact {
+    gap: 32px;
+
+    @media screen and (${props => props.theme.devices.tablet}) {
+      gap: 8px;
+    }
+  }
 `;
 
 export const SosialItem = styled.li``;

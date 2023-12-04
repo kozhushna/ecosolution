@@ -178,6 +178,7 @@ export const ButtonNav = styled.button`
   justify-content: center;
   align-items: center;
   padding: 15px;
+  fill: ${props => props.theme.colors.primary};
   border-radius: 50%;
   border: 1px solid ${props => props.theme.colors.primary};
   transition: border-color ${props => props.theme.baseTransition},

@@ -3,7 +3,7 @@ import { SosialItem, SosialLink, Sosiallist } from './Sosial.styled';
 
 export const Sosial = ({ place }) => {
   return (
-    <Sosiallist>
+    <Sosiallist className={place}>
       <SosialItem>
         <SosialLink
           href="https://facebook.com"
