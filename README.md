@@ -33,7 +33,5 @@ implementation.
 Contact information for getting in touch with the organization behind the
 initiative. Implemented the ability to communicate using a specialized form.
 
-# Getting Started with Create React App
-
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
