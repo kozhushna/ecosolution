@@ -8,7 +8,8 @@ export const Sosial = ({ place }) => {
         <SosialLink
           href="https://facebook.com"
           target="_blank"
-          rel="noopener noreferrer nofollow "
+          rel="noopener noreferrer nofollow"
+          aria-label="Go to facebook"
           className={place}
         >
           <Svg w={24} h={24} icon="facebook" />
@@ -18,7 +19,8 @@ export const Sosial = ({ place }) => {
         <SosialLink
           href="https://instagram.com"
           target="_blank"
-          rel="noopener noreferrer nofollow "
+          rel="noopener noreferrer nofollow"
+          aria-label="Go to instagram"
           className={place}
         >
           <Svg w={24} h={24} icon="instagram" />

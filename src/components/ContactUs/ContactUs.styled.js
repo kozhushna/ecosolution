@@ -36,6 +36,7 @@ export const ContactLink = styled.a`
   display: flex;
   align-items: center;
   gap: 8px;
+  max-width: max-content;
   fill: ${props => props.theme.colors.primary};
   transition: color ${props => props.theme.baseTransition},
     fill ${props => props.theme.baseTransition};

@@ -96,12 +96,14 @@ export const Slider = ({ data }) => {
                   alt={`${el.description}`}
                   width={320}
                   height={168}
+                  loading="lazy"
                 />
               </picture>
               <TitleWrapper>
                 <SlideTitle>{el.title}</SlideTitle>
                 <GoLink
-                  ahref="http://example.com"
+                  a
+                  href="http://example.com"
                   aria-label="Go to site"
                   target="_blank"
                 >

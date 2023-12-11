@@ -100,6 +100,7 @@ export const GlobalStyles = css`
   }
 
   button {
+    display: inline-block;
     padding: 0;
     border: none;
     font: inherit;
@@ -109,6 +110,7 @@ export const GlobalStyles = css`
   }
 
   a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
   }

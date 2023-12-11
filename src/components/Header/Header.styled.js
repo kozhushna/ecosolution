@@ -11,8 +11,7 @@ export const HeaderSection = styled.header`
   background-color: ${props => props.theme.colors.mainBackground};
 
   &.scroll {
-    background-color: ${props => props.theme.colors.backdrop};
-    backdrop-filter: blur(2px);
+    background-color: ${props => props.theme.colors.white};
   }
   @media screen and (${props => props.theme.devices.tablet}) {
     padding-bottom: 0;

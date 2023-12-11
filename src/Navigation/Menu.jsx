@@ -23,19 +23,23 @@ export const Menu = ({ close }) => {
         <nav>
           <NavigationList>
             <NavigationItem>
-              <NavigationLink text="Main" url="#hero" />
+              <NavigationLink text="Main" url="#hero" closeMenu={close} />
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink text="About" url="#values" />
+              <NavigationLink text="About" url="#values" closeMenu={close} />
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink text="Cases" url="#cases" />
+              <NavigationLink text="Cases" url="#cases" closeMenu={close} />
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink text="FAQ" url="#faq" />
+              <NavigationLink text="FAQ" url="#faq" closeMenu={close} />
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink text="Contact Us" url="#contacts" />
+              <NavigationLink
+                text="Contact Us"
+                url="#contacts"
+                closeMenu={close}
+              />
             </NavigationItem>
           </NavigationList>
         </nav>

@@ -46,6 +46,7 @@ export const Values = () => {
               alt="two wokers on wind farms fields"
               width="342"
               height="197"
+              loading="lazy"
             />
           </picture>
 
@@ -69,6 +70,7 @@ export const Values = () => {
               alt="man worker firld by solar panels"
               width="342"
               height="197"
+              loading="lazy"
             />
           </picture>
         </ListWrapper>

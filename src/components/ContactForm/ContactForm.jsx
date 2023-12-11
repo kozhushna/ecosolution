@@ -25,7 +25,7 @@ export const ContactForm = () => {
     <ContentWrapper>
       <Form
         onSubmit={handleSubmit(data => {
-          console.log(data);
+          // console.log(data);
           reset();
         })}
       >
