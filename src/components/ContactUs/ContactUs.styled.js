@@ -37,8 +37,8 @@ export const ContactLink = styled.a`
   align-items: center;
   gap: 8px;
   fill: ${props => props.theme.colors.primary};
-  transition: color ${props => props.theme.baseTransition} fill
-    ${props => props.theme.baseTransition};
+  transition: color ${props => props.theme.baseTransition},
+    fill ${props => props.theme.baseTransition};
 
   &:hover,
   &:focus {

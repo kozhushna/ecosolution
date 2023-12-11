@@ -59,7 +59,8 @@ export const ContactLink = styled.a`
   padding: 10px 16px;
   background-color: ${props => props.theme.colors.accent};
   border-radius: 500px;
-  transition: color ${props => props.theme.baseTransition};
+  transition: color ${props => props.theme.baseTransition},
+    background-color ${props => props.theme.baseTransition};
 
   &:hover,
   &:focus {
@@ -82,6 +83,9 @@ export const SvgWrapper = styled.div`
   rotate: 180deg;
 
   fill: ${props => props.theme.colors.accent};
+
+  transition: fill ${props => props.theme.baseTransition},
+    background-color ${props => props.theme.baseTransition};
 `;
 
 export const Text = styled.p`

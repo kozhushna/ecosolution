@@ -27,8 +27,8 @@ export const UpLink = styled.a`
   border-radius: 50%;
   background-color: ${props => props.theme.colors.accent};
   fill: ${props => props.theme.colors.primary};
-  transition: background-color ${props => props.theme.baseTransition} fill
-    ${props => props.theme.baseTransition};
+  transition: background-color ${props => props.theme.baseTransition},
+    fill ${props => props.theme.baseTransition};
 
   &:hover,
   &:focus {

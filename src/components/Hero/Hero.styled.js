@@ -69,8 +69,8 @@ export const Link = styled.a`
   background-color: ${props => props.theme.colors.mainBackground};
   border: 1px solid ${props => props.theme.colors.accent};
   border-radius: 500px;
-  transition: color ${props => props.theme.baseTransition} background-color
-    ${props => props.theme.baseTransition};
+  transition: color ${props => props.theme.baseTransition},
+    background-color ${props => props.theme.baseTransition};
 
   &:hover,
   &:focus {
